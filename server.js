@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 
-app.use(methodOverride("method"));
+app.use(methodOverride("_method"));
 app.engine("handlebars",exphbs({
     defaultLayout: "main"
 }));
