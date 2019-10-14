@@ -1,6 +1,6 @@
 # Eat-Da-Burger
 
-*** Technologies Used ***
+***Technologies Used***
 * MySQL
   * Used to house the database for the app
 * Node
