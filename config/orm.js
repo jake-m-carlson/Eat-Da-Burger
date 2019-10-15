@@ -8,13 +8,13 @@ var orm = {
         })
     },
     
-    // update: function(tableInput, condition, cb){
-    //     // this will change devour to true, and update that object
-    //     connection.query("UPDATE "+tableInput+"SET devour=true WHERE id="+condition+";", function(err,result){
-    //         if(err)throw err;
-    //         cb(result);
-    //     })
-    // }
+    update: function(tableInput, condition, cb){
+        // this will change devour to true, and update that object
+        connection.query("UPDATE "+tableInput+" SET devour=true WHERE id="+condition+";", function(err,result){
+            if(err)throw err;
+            cb(result);
+        })
+    }
 };
 
 module.exports = orm;

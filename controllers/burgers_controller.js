@@ -7,7 +7,13 @@ router.get("/", function(req,res){
         console.log(burger_data);
         res.render("index",{burger_data});
     })
-    // res.render("index"); // remove this later on and unmark 3 lines above
 })
+
+router.put("/burgers/update",function(req,res){
+    burger.update(req.body.burger_id, function(result){
+        console.log(result);
+        res.redirect("/");
+    });
+});
 
 module.exports = router;
