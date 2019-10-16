@@ -6,7 +6,7 @@ console.log("We're gonna need a bigger boat", process.env.JASWDB_URL);
 if (process.env.JAWSDB_URL) {
     // Database is JawsDB on Heroku
     connection = mysql.createConnection({
-        host: process.env.JAWSDB_URL,
+        host: "l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         user: 'n6bd3t565y51miw9',
         database: 'd6fijfz756gt56ff',
         port: 3306,
