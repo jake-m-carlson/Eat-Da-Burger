@@ -4,7 +4,13 @@ var mysql = require("mysql");
 var connection;
 if (process.env.JAWSDB_URL) {
     // Database is JawsDB on Heroku
-    connection = mysql.createConnection(process.env.JAWSDB_URL);
+    connection = mysql.createConnection({
+        host: process.env.JAWSDB_URL,
+        user: 'n6bd3t565y51miw9',
+        database: 'd6fijfz756gt56ff',
+        port: 3306,
+        password: 'y1pnl2ud9clpilrm'
+    });
 } else {
     // Database is local
     connection = mysql.createConnection({
